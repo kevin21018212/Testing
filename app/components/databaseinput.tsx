@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import axios from 'axios';
 import '../componentscss/databaseinput.css';
 
 const AddSongForm = () => {
@@ -9,18 +10,29 @@ const AddSongForm = () => {
   const [year, setYear] = useState('');
   const [rating, setRating] = useState('');
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // TODO: Store the form data in the database
-    // You can use an API endpoint to handle the database interaction
+    try {
+      const response = await axios.post('/api/songs', {
+        songName,
+        artist,
+        album,
+        year,
+        rating,
+      });
 
-    // Clear the form inputs after submission
-    setSongName('');
-    setArtist('');
-    setAlbum('');
-    setYear('');
-    setRating('');
+      console.log(response.data); // Optional: Handle the response from the server
+
+      // Clear the form inputs after successful submission
+      setSongName('');
+      setArtist('');
+      setAlbum('');
+      setYear('');
+      setRating('');
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
