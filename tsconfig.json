@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/databaseinput.tsx", "app/components/db.js", "app/api/songs/db.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/databaseinput.tsx", "app/components/db.js", "app/api/songs/db.js", "lib/prisma.js"],
   "exclude": ["node_modules"]
 }

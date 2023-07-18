@@ -1,0 +1,36 @@
+
+
+.song-list-container {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .song-list-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+
+  .song-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .song-list-item {
+    margin-bottom: 5px;
+  }
+  
+  .song-list-item::before {
+    content: "• ";
+    color: #555555;
+  }
+  
+  .song-list-item a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .song-list-item a:hover {
+    text-decoration: underline;
+  }
+  

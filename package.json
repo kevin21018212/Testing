@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.0.0",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
+    "mysql": "^2.18.1",
     "next": "13.4.9",
     "node-fetch": "^3.3.1",
     "pg": "^8.11.1",
@@ -25,6 +27,8 @@
   },
   "devDependencies": {
     "@types/pg": "^8.10.2",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "prisma": "^5.0.0"
+  
   }
 }
