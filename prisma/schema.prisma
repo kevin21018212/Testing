@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgres"
-  url      = "postgresql://postgres:Kevin2112!@database-1.cmcjo0rjrckp.us-east-2.rds.amazonaws.com:5432/postgres"
+  url      = "your own string"
 }
 
 model Song {
