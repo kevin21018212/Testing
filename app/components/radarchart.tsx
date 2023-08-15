@@ -40,6 +40,16 @@ const EmployeeRadarChart = ({employeeData}: any) => {
     ));
   };
 
+  const generateSkillLines = () => {
+    return skillPoints.map((currPoint: any, i: number) => {
+      // Only generate lines for points within the green polygon
+      if (currPoint.x > 0 && currPoint.y > 0) {
+        return <line key={i} x1={centerX} y1={centerY} x2={currPoint.x} y2={currPoint.y} stroke='#023020' strokeWidth='2' />;
+      }
+      return null;
+    });
+  };
+
   //calculates location of each skill point based on skill level along with location of skill label
   const skillPoints = employeeData.skills.map((currSkill: any, i: number) => {
     const skillAngle = i * angleBetween;
@@ -60,6 +70,7 @@ const EmployeeRadarChart = ({employeeData}: any) => {
         <svg width={200} height={200}>
           {generateSpiderWeb()}
           {generateSkillLabels()}
+          {generateSkillLines()}
           {/*Skills points and connecting polygons */}
           <polygon points={skillPoints.map((point: any) => `${point.x},${point.y}`).join(" ")} fill='rgba(0, 255, 0, 0.5)' stroke='green' strokeWidth='2' />
         </svg>
