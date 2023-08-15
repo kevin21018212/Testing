@@ -42,11 +42,7 @@ const EmployeeRadarChart = ({employeeData}: any) => {
 
   const generateSkillLines = () => {
     return skillPoints.map((currPoint: any, i: number) => {
-      // Only generate lines for points within the green polygon
-      if (currPoint.x > 0 && currPoint.y > 0) {
-        return <line key={i} x1={centerX} y1={centerY} x2={currPoint.x} y2={currPoint.y} stroke='#023020' strokeWidth='2' />;
-      }
-      return null;
+      return <line key={i} x1={centerX} y1={centerY} x2={currPoint.x} y2={currPoint.y} stroke='#023020' strokeWidth='2' />;
     });
   };
 
