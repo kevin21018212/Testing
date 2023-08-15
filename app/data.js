@@ -1,0 +1,253 @@
+// employeeData.js
+
+const employeeData = [
+    {
+      id: 1,
+      name: "John Doe",
+      role: "Software Engineer",
+      department: "Engineering",
+      skills: [
+        { name: "Coding", progress: 80 },
+        { name: "Design", progress: 60 },
+        { name: "MongoDB", progress: 80 },
+      ],
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      role: "UX Designer",
+      department: "Design",
+      skills: [
+        { name: "UI Design", progress: 70 },
+        { name: "User Research", progress: 85 },
+        { name: "Prototyping", progress: 75 },
+        { name: "MongoDB", progress: 80 },
+      ],
+
+    },
+    // Add more employees with different skill counts and progress levels
+    {
+      id: 3,
+      name: "Michael Johnson",
+      role: "Marketing Manager",
+      department: "Marketing",
+      skills: [
+        { name: "Campaign Strategy", progress: 75 },
+        { name: "Statistics", progress: 75 },
+        { name: "Data Visualization", progress: 60 },
+        { name: "Data Analysis", progress: 85 },
+        { name: "Machine Learning", progress: 70 },
+      ],
+    },
+    {
+      id: 4,
+      name: "Emily Brown",
+      role: "Data Scientist",
+      department: "Data Science",
+      skills: [
+        { name: "Data Analysis", progress: 85 },
+        { name: "Machine Learning", progress: 70 },
+        { name: "Statistics", progress: 75 },
+        { name: "Data Visualization", progress: 60 },
+      ],
+    },
+    {
+        id: 5,
+        name: "Alex Turner",
+        role: "Frontend Developer",
+        department: "Engineering",
+        skills: [
+          { name: "JavaScript", progress: 90 },
+          { name: "React", progress: 85 },
+          { name: "HTML/CSS", progress: 80 },
+        ],
+      },
+      {
+        id: 6,
+        name: "Sophia Lee",
+        role: "Product Manager",
+        department: "Product Management",
+        skills: [
+          { name: "Product Strategy", progress: 75 },
+          { name: "Market Research", progress: 70 },
+          { name: "Project Management", progress: 80 },
+        ],
+      },
+      {
+        id: 7,
+        name: "Daniel Johnson",
+        role: "Backend Developer",
+        department: "Engineering",
+        skills: [
+          { name: "Node.js", progress: 85 },
+          { name: "MongoDB", progress: 80 },
+          { name: "MongoDB", progress: 80 },
+          { name: "API Design", progress: 70 },
+        ],
+      },
+      {
+        id: 8,
+        name: "Olivia Martinez",
+        role: "Graphic Designer",
+        department: "Design",
+        skills: [
+          { name: "Graphic Design", progress: 85 },
+          { name: "Illustration", progress: 70 },
+          { name: "Typography", progress: 75 },
+          { name: "SEO", progress: 70 },
+          { name: "Content Strategy", progress: 80 },
+        ],
+      },
+      {
+        id: 9,
+        name: "William Anderson",
+        role: "Data Analyst",
+        department: "Data Science",
+        skills: [
+          { name: "Data Analysis", progress: 75 },
+          { name: "SQL", progress: 80 },
+          { name: "Excel", progress: 85 },
+          { name: "TensorFlow", progress: 75 },
+        ],
+      },
+      {
+        id: 10,
+        name: "Emma Miller",
+        role: "Content Writer",
+        department: "Marketing",
+        skills: [
+          { name: "Copywriting", progress: 90 },
+          { name: "SEO", progress: 70 },
+          { name: "Content Strategy", progress: 80 },
+        ],
+      },
+      {
+        id: 11,
+        name: "Liam Wilson",
+        role: "Machine Learning Engineer",
+        department: "Engineering",
+        skills: [
+          { name: "Machine Learning", progress: 85 },
+          { name: "Python", progress: 90 },
+          { name: "TensorFlow", progress: 75 },
+          { name: "Data Analysis", progress: 75 },
+          { name: "SQL", progress: 80 },
+          { name: "Excel", progress: 85 },
+          { name: "TensorFlow", progress: 75 },
+        ],
+      },
+      {
+        id: 12,
+        name: "Ava Thompson",
+        role: "UX/UI Designer",
+        department: "Design",
+        skills: [
+          { name: "UI Design", progress: 80 },
+          { name: "User Testing", progress: 70 },
+          { name: "Wireframing", progress: 85 },
+          { name: "JavaScript", progress: 85 },
+          { name: "React", progress: 75 },
+          { name: "JavaScript", progress: 85 },
+        ],
+      },
+      {
+        id: 13,
+        name: "Noah Parker",
+        role: "Frontend Developer",
+        department: "Engineering",
+        skills: [
+          { name: "HTML/CSS", progress: 80 },
+          { name: "JavaScript", progress: 85 },
+          { name: "React", progress: 75 },
+          { name: "JavaScript", progress: 85 },
+          { name: "Wireframing", progress: 85 },
+        ],
+      },
+      {
+        id: 14,
+        name: "Mia Cooper",
+        role: "Product Designer",
+        department: "Design",
+        skills: [
+          { name: "Product Design", progress: 75 },
+          { name: "Sketch", progress: 85 },
+          { name: "Design Systems", progress: 70 },
+          { name: "JavaScript", progress: 85 },
+        ],
+      },
+      {
+        id: 15,
+        name: "Ethan Turner",
+        role: "Software Engineer",
+        department: "Engineering",
+        skills: [
+          { name: "Java", progress: 80 },
+          { name: "Social Media Marketing", progress: 70 },
+          { name: "Spring Framework", progress: 70 },
+          { name: "Wireframing", progress: 85 },
+          { name: "Database Design", progress: 75 },
+        ],
+      },
+      {
+        id: 16,
+        name: "Isabella Scott",
+        role: "Data Scientist",
+        department: "Data Science",
+        skills: [
+          { name: "Data Analysis", progress: 85 },
+          { name: "Python", progress: 80 },
+          { name: "Machine Learning", progress: 70 },
+          { name: "Social Media Marketing", progress: 70 },
+        ],
+      },
+      {
+        id: 17,
+        name: "James Hill",
+        role: "Marketing Analyst",
+        department: "Marketing",
+        skills: [
+          { name: "Marketing Analytics", progress: 75 },
+          { name: "Google Analytics", progress: 85 },
+          { name: "Wireframing", progress: 85 },
+          { name: "Data Visualization", progress: 70 },
+        ],
+      },
+      {
+        id: 18,
+        name: "Grace Adams",
+        role: "UI Designer",
+        department: "Design",
+        skills: [
+          { name: "UI Design", progress: 85 },
+          { name: "Adobe XD", progress: 80 },
+          { name: "Animation", progress: 70 },
+        ],
+      },
+      {
+        id: 19,
+        name: "Benjamin Mitchell",
+        role: "Full Stack Developer",
+        department: "Engineering",
+        skills: [
+          { name: "React", progress: 85 },
+          { name: "Node.js", progress: 80 },
+          { name: "Wireframing", progress: 85 },
+          { name: "Express.js", progress: 70 },
+          { name: "Social Media Marketing", progress: 70 },
+        ],
+      },
+      {
+        id: 20,
+        name: "Chloe Wright",
+        role: "Content Marketing Manager",
+        department: "Marketing",
+        skills: [
+          { name: "Content Strategy", progress: 75 },
+          { name: "SEO", progress: 85 },
+          { name: "Social Media Marketing", progress: 70 },
+        ],
+      },
+  ];
+  
+  export default employeeData;
+  
